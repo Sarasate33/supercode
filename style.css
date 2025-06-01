@@ -1,0 +1,150 @@
+body {
+  background-color: #ddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+#game-board {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 30px;
+  text-align: center;
+}
+
+#guesses {
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 40px;
+  margin-top: 0;
+  margin-bottom: 35px;
+  color: rgb(118, 116, 155);
+}
+
+.index-number {
+  color: rgb(204, 204, 214);
+  font-size: 25px;
+  font-weight: bold;
+  margin-right: 16px;
+}
+
+.guess-row {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.guess-item {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 5px;
+  background-color: gray;
+}
+
+.guess-item[data-color="red"] {
+  background-color: red;
+}
+
+.guess-item[data-color="blue"] {
+  background-color: blue;
+}
+
+.guess-item[data-color="green"] {
+  background-color: green;
+}
+
+.guess-item[data-color="yellow"] {
+  background-color: yellow;
+}
+
+.guess-item[data-color="brown"] {
+  background-color: brown;
+}
+
+.guess-result {
+  justify-content: center;
+  margin-top: 3px;
+  margin-left: 8px;
+  margin-right: -7px;
+}
+
+.guess-result-item {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  margin-left: 2px;
+  margin-bottom: 2px;
+  background-color: gray;
+}
+
+.guess-result-item[data-color="black"] {
+  background-color: black;
+}
+
+.guess-result-item[data-color="white"] {
+  background-color: white;
+}
+
+.guess-result-item[data-color="lavender"] {
+  background-color: lavender;
+}
+
+.color-options {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.color-select {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 10px;
+}
+
+.color-display,
+.color-option {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  margin-bottom: 5px;
+  background-color: gray;
+}
+
+.color-option[data-color="red"] {
+  background-color: red;
+}
+
+.color-option[data-color="blue"] {
+  background-color: blue;
+}
+
+.color-option[data-color="green"] {
+  background-color: green;
+}
+
+.color-option[data-color="yellow"] {
+  background-color: yellow;
+}
+
+.color-option[data-color="brown"] {
+  background-color: brown;
+}
+
+.color-list {
+  display: none;
+  position: absolute;
+}
+
+.color-list.show {
+  display: flex;
+  flex-direction: column;
+}
